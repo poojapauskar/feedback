@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Lato Bold;
+  src: url(Fonts/Lato-Bold.ttf);
+}
+
+body{
+    background-color: #E0E0E0;
+}
+
+
+
+h4{
+   font-family: Lato Bold;
+   text-align: center;
+   font-size: 30px;
+   margin-top: 15%; 
+   color:#888888;
+}
+
+th, td {
+    padding: 6px 48px 14px 15px;
+}
+th{
+  font-family: Lato Bold;
+  text-align:center;
+  color:white;
+  background-color: #49AC4D;
+}
+td{
+  font-family: Lato Light;
+  text-align:center;
+}
+
+table, th, td {
+      border: 1px solid #49AC4D ;
+      border-collapse: collapse;
+      font-size:12px;
+      margin-top: 0%;
+      margin-left: 44%;
+      
+  }
