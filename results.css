@@ -1,41 +1,82 @@
-@font-face {
-  font-family: Lato Bold;
-  src: url(Fonts/Lato-Bold.ttf);
+.adobe{
+	background-color: red !important;
+}
+.html{
+	background-color: red !important;
+}
+.css{
+	background-color: red !important;
+}
+.lesssass{
+	background-color: red !important;
+}
+.jquery{
+	background-color: red !important;
+}
+.javascript{
+	background-color: red !important;
+}
+.bootstrap{
+	background-color: red !important;
+}
+.wordpress{
+	background-color: red !important;
+}
+.ui{
+	background-color: red !important;
+}
+.ux{
+	background-color: red !important;
+}
+.rwd{
+	background-color: red !important;
+}
+.mobile{
+	background-color: red !important;
 }
 
-body{
-    background-color: #E0E0E0;
+#resumeProficiencies {
+	float: left;
+	clear: right;
+	width: 70%;
+	margin: 20px 0px 10px 30px;
 }
 
-
-
-h4{
-   font-family: Lato Bold;
-   text-align: center;
-   font-size: 30px;
-   margin-top: 15%; 
-   color:#888888;
+#resumeProficienciesTop {
+	float: left;
+	clear: right;
+	width: 100%;
+	margin: -5px 0px 0px 0px;
+	text-align: left;
+	font-weight: 600;
 }
 
-th, td {
-    padding: 6px 48px 14px 15px;
-}
-th{
-  font-family: Lato Bold;
-  text-align:center;
-  color:white;
-  background-color: #49AC4D;
-}
-td{
-  font-family: Lato Light;
-  text-align:center;
+#resumeProficienciesBottom {
+	float: left;
+	clear: right;
+	width: 80%;
+	margin: 2px 0px 0px 0px;
 }
 
-table, th, td {
-      border: 1px solid #49AC4D ;
-      border-collapse: collapse;
-      font-size:12px;
-      margin-top: 0%;
-      margin-left: 44%;
-      
-  }
+.progress {
+	background:#e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -o-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: linear-gradient(top, #dddddd, #e9e5e2);  
+	height:20px; 
+	border-radius: 0px;
+	-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	box-shadow: 0 1px 0px #bbbbbb inset, 0 1px 0 #fcfcfc;	  
+}
+
+.adobe, .html, .css, .jquery, .javascript, .bootstrap, .wordpress, .ui, .ux, .rwd, .mobile, .rapidproto {
+
+ -webkit-transition: width 4.50s ease !important;
+ -moz-transition: width 4.50s ease !important;
+   -o-transition: width 4.50s ease !important;
+      transition: width 4.50s ease !important;
+ }
