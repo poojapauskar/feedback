@@ -32,13 +32,14 @@ $arr_check = json_decode($output_check,true);
 
 ?>
 
+
     <!-- Horizontal, rounded -->
 
 <div class="container horizontal rounded">
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="boring">
-        <span><?php echo $arr_check[0]['this is boring'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['this is boring']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -46,7 +47,7 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="know">
-        <span><?php echo $arr_check[0]['need to know more...'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['need to know more...']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -54,7 +55,7 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="sleepy">
-        <span><?php echo $arr_check[0]['i feel sleepy'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['i feel sleepy']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -62,7 +63,7 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="slow">
-        <span><?php echo $arr_check[0]['please slow down'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['please slow down']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -70,7 +71,7 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="interest">
-        <span><?php echo $arr_check[0]['this is interesting'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['this is interesting']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -78,14 +79,14 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="saturate">
-        <span><?php echo $arr_check[0]['im saturated'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['im saturated']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="lovin">
-        <span><?php echo $arr_check[0]['im lovin it'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['im lovin it']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -93,7 +94,7 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="chai">
-        <span><?php echo $arr_check[0]['i need a chai break'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['i need a chai break']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -101,14 +102,14 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="track">
-        <span><?php echo $arr_check[0]['lost the track'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['lost the track']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="info">
-        <span><?php echo $arr_check[0]['this is informative'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['this is informative']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -116,7 +117,7 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="world">
-        <span><?php echo $arr_check[0]['best thing in the WORLD'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['best thing in the WORLD']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -124,7 +125,7 @@ $arr_check = json_decode($output_check,true);
   <div class="progress-bar horizontal">
     <div class="progress-track">
       <div class="progress-fill" id="why">
-        <span><?php echo $arr_check[0]['why am i here???'];echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['why am i here???']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -137,8 +138,37 @@ $arr_check = json_decode($output_check,true);
 
         <script src="js/index.js"></script>
 
-    
-    
+
+<?php
+
+if($arr_check[0]['this is boring']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is boring']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is boring']>$arr_check[0]['please slow down'] && $arr_check[0]['this is boring']>$arr_check[0]['this is interesting'] && $arr_check[0]['this is boring']>$arr_check[0]['im saturated'] && $arr_check[0]['this is boring']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is boring']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is boring']>$arr_check[0]['lost the track'] && $arr_check[0]['this is boring']>$arr_check[0]['this is informative'] && $arr_check[0]['this is boring']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['this is boring']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['this is boring'] * 0.4);echo "%";
+
+if($arr_check[0]['need to know more...']>$arr_check[0]['this is boring'] && $arr_check[0]['need to know more...']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['need to know more...']>$arr_check[0]['please slow down'] && $arr_check[0]['need to know more...']>$arr_check[0]['this is interesting'] && $arr_check[0]['need to know more...']>$arr_check[0]['im saturated'] && $arr_check[0]['need to know more...']>$arr_check[0]['im lovin it'] && $arr_check[0]['need to know more...']>$arr_check[0]['i need a chai break'] && $arr_check[0]['need to know more...']>$arr_check[0]['lost the track'] && $arr_check[0]['need to know more...']>$arr_check[0]['this is informative'] && $arr_check[0]['need to know more...']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['need to know more...']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['need to know more...'] * 0.4);echo "%";
+  
+if($arr_check[0]['i feel sleepy']>$arr_check[0]['need to know more...'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is boring'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['please slow down'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is interesting'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['im saturated'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['im lovin it'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['i need a chai break'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['lost the track'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['i feel sleepy'] * 0.4);echo "%";
+if($arr_check[0]['please slow down']>$arr_check[0]['need to know more...'] && $arr_check[0]['please slow down']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['please slow down']>$arr_check[0]['this is boring'] && $arr_check[0]['please slow down']>$arr_check[0]['this is interesting'] && $arr_check[0]['please slow down']>$arr_check[0]['im saturated'] && $arr_check[0]['please slow down']>$arr_check[0]['im lovin it'] && $arr_check[0]['please slow down']>$arr_check[0]['i need a chai break'] && $arr_check[0]['please slow down']>$arr_check[0]['lost the track'] && $arr_check[0]['please slow down']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['please slow down']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['please slow down'] * 0.4);echo "%";
+if($arr_check[0]['this is interesting']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is interesting']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is interesting']>$arr_check[0]['please slow down'] && $arr_check[0]['this is interesting']>$arr_check[0]['this is boring'] && $arr_check[0]['this is interesting']>$arr_check[0]['im saturated'] && $arr_check[0]['this is interesting']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is interesting']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is interesting']>$arr_check[0]['lost the track'] && $arr_check[0]['this is interesting']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['this is interesting']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['this is interesting'] * 0.4);echo "%";
+if($arr_check[0]['im saturated']>$arr_check[0]['need to know more...'] && $arr_check[0]['im saturated']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['im saturated']>$arr_check[0]['please slow down'] && $arr_check[0]['im saturated']>$arr_check[0]['this is boring'] && $arr_check[0]['im saturated']>$arr_check[0]['this is interesting'] && $arr_check[0]['im saturated']>$arr_check[0]['im lovin it'] && $arr_check[0]['im saturated']>$arr_check[0]['i need a chai break'] && $arr_check[0]['im saturated']>$arr_check[0]['lost the track'] && $arr_check[0]['im saturated']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['im saturated']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['im saturated'] * 0.4);echo "%";
+if($arr_check[0]['im lovin it']>$arr_check[0]['need to know more...'] && $arr_check[0]['im lovin it']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['im lovin it']>$arr_check[0]['please slow down'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is interesting'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is boring'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is informative'] && $arr_check[0]['im lovin it']>$arr_check[0]['i need a chai break'] && $arr_check[0]['im lovin it']>$arr_check[0]['lost the track'] && $arr_check[0]['im lovin it']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['im lovin it']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['im lovin it'] * 0.4);echo "%";
+if($arr_check[0]['i need a chai break']>$arr_check[0]['need to know more...'] && $arr_check[0]['i need a chai break']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['i need a chai break']>$arr_check[0]['please slow down'] && $arr_check[0]['i need a chai break']>$arr_check[0]['this is interesting'] && $arr_check[0]['i need a chai break']>$arr_check[0]['im saturated'] && $arr_check[0]['i need a chai break']>$arr_check[0]['im lovin it'] && $arr_check[0]['i need a chai break']>$arr_check[0]['this is boring'] && $arr_check[0]['i need a chai break']>$arr_check[0]['lost the track'] && $arr_check[0]['i need a chai break']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['i need a chai break']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['i need a chai break'] * 0.4);echo "%";
+if($arr_check[0]['lost the track']>$arr_check[0]['need to know more...'] && $arr_check[0]['lost the track']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['lost the track']>$arr_check[0]['please slow down'] && $arr_check[0]['lost the track']>$arr_check[0]['this is interesting'] && $arr_check[0]['lost the track']>$arr_check[0]['im saturated'] && $arr_check[0]['lost the track']>$arr_check[0]['im lovin it'] && $arr_check[0]['lost the track']>$arr_check[0]['i need a chai break'] && $arr_check[0]['lost the track']>$arr_check[0]['this is boring'] && $arr_check[0]['lost the track']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['lost the track']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['lost the track'] * 0.4);echo "%";
+if($arr_check[0]['this is informative']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is informative']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is informative']>$arr_check[0]['please slow down'] && $arr_check[0]['this is informative']>$arr_check[0]['this is interesting'] && $arr_check[0]['this is informative']>$arr_check[0]['im saturated'] && $arr_check[0]['this is informative']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is informative']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is informative']>$arr_check[0]['lost the track'] && $arr_check[0]['this is informative']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['this is informative']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['this is informative'] * 0.4);echo "%";
+if($arr_check[0]['best thing in the WORLD']>$arr_check[0]['need to know more...'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['please slow down'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['this is interesting'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['im saturated'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['im lovin it'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['i need a chai break'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['lost the track'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['this is boring'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['why am i here???'])
+        echo ($arr_check[0]['best thing in the WORLD'] * 0.4);echo "%";
+if($arr_check[0]['why am i here???']>$arr_check[0]['need to know more...'] && $arr_check[0]['why am i here???']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['why am i here???']>$arr_check[0]['please slow down'] && $arr_check[0]['why am i here???']>$arr_check[0]['this is interesting'] && $arr_check[0]['why am i here???']>$arr_check[0]['im saturated'] && $arr_check[0]['why am i here???']>$arr_check[0]['im lovin it'] && $arr_check[0]['why am i here???']>$arr_check[0]['i need a chai break'] && $arr_check[0]['why am i here???']>$arr_check[0]['lost the track'] && $arr_check[0]['why am i here???']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['why am i here???']>$arr_check[0]['this is boring'])
+        echo ($arr_check[0]['why am i here???'] * 0.4);echo "%";
+
+?>
     
   </body>
 </html>
