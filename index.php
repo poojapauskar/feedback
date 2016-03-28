@@ -57,13 +57,13 @@ if ($_COOKIE['FormSubmitted'] == 4)
 if ($_COOKIE['FormSubmitted'] == 5)
 {
     die('Thank you for your feedback!');
-} */
+}*/ 
 
 if($_POST['feedback'] != ''){
 
 
 
-    $url = 'https://feedback-list.herokuapp.com/set_feedback/';
+    $url = 'http://localhost:8000/set_feedback/';
     $data = array('value' => $_POST['feedback']);
     // use key 'http' even if you send the request to https://...
     $options = array(
