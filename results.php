@@ -147,7 +147,7 @@ $arr_check = json_decode($output_check,true);
     <div class="progress-track">
      
       <div class="progress-fill" id="world">
-        <span><?php echo ($arr_check[0]['best thing in the WORLD']*0.4);echo '%'; ?></span>
+        <span><?php echo ($arr_check[0]['best thing in the world']*0.4);echo '%'; ?></span>
       </div>
     </div>
   </div>
@@ -173,66 +173,81 @@ $arr_check = json_decode($output_check,true);
 
 <?php
 
-if($arr_check[0]['this is boring']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is boring']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is boring']>$arr_check[0]['please slow down'] && $arr_check[0]['this is boring']>$arr_check[0]['this is interesting'] && $arr_check[0]['this is boring']>$arr_check[0]['im saturated'] && $arr_check[0]['this is boring']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is boring']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is boring']>$arr_check[0]['lost the track'] && $arr_check[0]['this is boring']>$arr_check[0]['this is informative'] && $arr_check[0]['this is boring']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['this is boring']>$arr_check[0]['why am i here???']){
+$image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151474/waiting_tdkodi.gif";
+
+if($arr_check[0]['this is boring']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is boring']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is boring']>$arr_check[0]['please slow down'] && $arr_check[0]['this is boring']>$arr_check[0]['this is interesting'] && $arr_check[0]['this is boring']>$arr_check[0]['im saturated'] && $arr_check[0]['this is boring']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is boring']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is boring']>$arr_check[0]['lost the track'] && $arr_check[0]['this is boring']>$arr_check[0]['this is informative'] && $arr_check[0]['this is boring']>$arr_check[0]['best thing in the world'] && $arr_check[0]['this is boring']>$arr_check[0]['why am i here???']){
         $message="THIS IS BORING";
         $percent=$arr_check[0]['this is boring'] * 0.4;
-        $image="gif/boring.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151475/boring_jqtqsn.gif";
 }
-if($arr_check[0]['need to know more...']>$arr_check[0]['this is boring'] && $arr_check[0]['need to know more...']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['need to know more...']>$arr_check[0]['please slow down'] && $arr_check[0]['need to know more...']>$arr_check[0]['this is interesting'] && $arr_check[0]['need to know more...']>$arr_check[0]['im saturated'] && $arr_check[0]['need to know more...']>$arr_check[0]['im lovin it'] && $arr_check[0]['need to know more...']>$arr_check[0]['i need a chai break'] && $arr_check[0]['need to know more...']>$arr_check[0]['lost the track'] && $arr_check[0]['need to know more...']>$arr_check[0]['this is informative'] && $arr_check[0]['need to know more...']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['need to know more...']>$arr_check[0]['why am i here???']){
+if($arr_check[0]['need to know more...']>$arr_check[0]['this is boring'] && $arr_check[0]['need to know more...']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['need to know more...']>$arr_check[0]['please slow down'] && $arr_check[0]['need to know more...']>$arr_check[0]['this is interesting'] && $arr_check[0]['need to know more...']>$arr_check[0]['im saturated'] && $arr_check[0]['need to know more...']>$arr_check[0]['im lovin it'] && $arr_check[0]['need to know more...']>$arr_check[0]['i need a chai break'] && $arr_check[0]['need to know more...']>$arr_check[0]['lost the track'] && $arr_check[0]['need to know more...']>$arr_check[0]['this is informative'] && $arr_check[0]['need to know more...']>$arr_check[0]['best thing in the world'] && $arr_check[0]['need to know more...']>$arr_check[0]['why am i here???']){
         $message="NEED TO KNOW MORE..."; 
-        $percent=$arr_check[0]['need to know more...'] * 0.4;      
-        $image="gif/know.gif";
+        $percent=$arr_check[0]['need to know more...'] * 0.4;
+        $sign="%";      
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151472/know_v8b6vq.gif";
 }
-if($arr_check[0]['i feel sleepy']>$arr_check[0]['need to know more...'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is boring'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['please slow down'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is interesting'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['im saturated'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['im lovin it'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['i need a chai break'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['lost the track'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['why am i here???'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is informative']){
+if($arr_check[0]['i feel sleepy']>$arr_check[0]['need to know more...'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is boring'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['please slow down'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is interesting'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['im saturated'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['im lovin it'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['i need a chai break'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['lost the track'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['best thing in the world'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['why am i here???'] && $arr_check[0]['i feel sleepy']>$arr_check[0]['this is informative']){
         $message="I FEEL SLEEPY";
         $percent=$arr_check[0]['i feel sleepy'] * 0.4;
-        $image="gif/sleepy.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151473/sleepy_ykjeso.gif";
 }
-if($arr_check[0]['please slow down']>$arr_check[0]['this is informative'] && $arr_check[0]['please slow down']>$arr_check[0]['need to know more...'] && $arr_check[0]['please slow down']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['please slow down']>$arr_check[0]['this is boring'] && $arr_check[0]['please slow down']>$arr_check[0]['this is interesting'] && $arr_check[0]['please slow down']>$arr_check[0]['im saturated'] && $arr_check[0]['please slow down']>$arr_check[0]['im lovin it'] && $arr_check[0]['please slow down']>$arr_check[0]['i need a chai break'] && $arr_check[0]['please slow down']>$arr_check[0]['lost the track'] && $arr_check[0]['please slow down']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['please slow down']>$arr_check[0]['why am i here???']){
+if($arr_check[0]['please slow down']>$arr_check[0]['this is informative'] && $arr_check[0]['please slow down']>$arr_check[0]['need to know more...'] && $arr_check[0]['please slow down']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['please slow down']>$arr_check[0]['this is boring'] && $arr_check[0]['please slow down']>$arr_check[0]['this is interesting'] && $arr_check[0]['please slow down']>$arr_check[0]['im saturated'] && $arr_check[0]['please slow down']>$arr_check[0]['im lovin it'] && $arr_check[0]['please slow down']>$arr_check[0]['i need a chai break'] && $arr_check[0]['please slow down']>$arr_check[0]['lost the track'] && $arr_check[0]['please slow down']>$arr_check[0]['best thing in the world'] && $arr_check[0]['please slow down']>$arr_check[0]['why am i here???']){
         $message="PLEASE SLOW DOWN";
         $percent=$arr_check[0]['please slow down'] * 0.4;
-        $image="gif/slow.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151473/slow_xurg6y.gif";
 }
-if($arr_check[0]['this is interesting']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is interesting']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is interesting']>$arr_check[0]['please slow down'] && $arr_check[0]['this is interesting']>$arr_check[0]['this is boring'] && $arr_check[0]['this is interesting']>$arr_check[0]['im saturated'] && $arr_check[0]['this is interesting']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is interesting']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is interesting']>$arr_check[0]['lost the track'] && $arr_check[0]['this is interesting']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['this is interesting']>$arr_check[0]['why am i here???'] && $arr_check[0]['this is interesting']>$arr_check[0]['this is informative']){
+if($arr_check[0]['this is interesting']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is interesting']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is interesting']>$arr_check[0]['please slow down'] && $arr_check[0]['this is interesting']>$arr_check[0]['this is boring'] && $arr_check[0]['this is interesting']>$arr_check[0]['im saturated'] && $arr_check[0]['this is interesting']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is interesting']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is interesting']>$arr_check[0]['lost the track'] && $arr_check[0]['this is interesting']>$arr_check[0]['best thing in the world'] && $arr_check[0]['this is interesting']>$arr_check[0]['why am i here???'] && $arr_check[0]['this is interesting']>$arr_check[0]['this is informative']){
         $message="THIS IS INTERESTING";
         $percent=$arr_check[0]['this is interesting'] * 0.4;
-        $image="gif/interesting.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151472/interesting_ew0zna.gif";
 }
-if($arr_check[0]['im saturated']>$arr_check[0]['this is informative'] && $arr_check[0]['im saturated']>$arr_check[0]['need to know more...'] && $arr_check[0]['im saturated']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['im saturated']>$arr_check[0]['please slow down'] && $arr_check[0]['im saturated']>$arr_check[0]['this is boring'] && $arr_check[0]['im saturated']>$arr_check[0]['this is interesting'] && $arr_check[0]['im saturated']>$arr_check[0]['im lovin it'] && $arr_check[0]['im saturated']>$arr_check[0]['i need a chai break'] && $arr_check[0]['im saturated']>$arr_check[0]['lost the track'] && $arr_check[0]['im saturated']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['im saturated']>$arr_check[0]['why am i here???']){
-        /*$message="I'M SATURATED";
+if($arr_check[0]['im saturated']>$arr_check[0]['this is informative'] && $arr_check[0]['im saturated']>$arr_check[0]['need to know more...'] && $arr_check[0]['im saturated']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['im saturated']>$arr_check[0]['please slow down'] && $arr_check[0]['im saturated']>$arr_check[0]['this is boring'] && $arr_check[0]['im saturated']>$arr_check[0]['this is interesting'] && $arr_check[0]['im saturated']>$arr_check[0]['im lovin it'] && $arr_check[0]['im saturated']>$arr_check[0]['i need a chai break'] && $arr_check[0]['im saturated']>$arr_check[0]['lost the track'] && $arr_check[0]['im saturated']>$arr_check[0]['best thing in the world'] && $arr_check[0]['im saturated']>$arr_check[0]['why am i here???']){
+        $message="I'M SATURATED";
         $percent=$arr_check[0]['im saturated'] * 0.4;
-        $image="gif/saturated.gif";*/
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151475/saturated_wb03ij.gif";
 }
-if($arr_check[0]['im lovin it']>$arr_check[0]['this is informative'] && $arr_check[0]['im lovin it']>$arr_check[0]['need to know more...'] && $arr_check[0]['im lovin it']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['im lovin it']>$arr_check[0]['please slow down'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is interesting'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is boring'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is informative'] && $arr_check[0]['im lovin it']>$arr_check[0]['i need a chai break'] && $arr_check[0]['im lovin it']>$arr_check[0]['lost the track'] && $arr_check[0]['im lovin it']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['im lovin it']>$arr_check[0]['why am i here???']){
-       /* $message="I'M LOVIN IT";
+if($arr_check[0]['im lovin it']>$arr_check[0]['this is informative'] && $arr_check[0]['im lovin it']>$arr_check[0]['need to know more...'] && $arr_check[0]['im lovin it']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['im lovin it']>$arr_check[0]['please slow down'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is interesting'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is boring'] && $arr_check[0]['im lovin it']>$arr_check[0]['this is informative'] && $arr_check[0]['im lovin it']>$arr_check[0]['i need a chai break'] && $arr_check[0]['im lovin it']>$arr_check[0]['lost the track'] && $arr_check[0]['im lovin it']>$arr_check[0]['best thing in the world'] && $arr_check[0]['im lovin it']>$arr_check[0]['why am i here???']){
+        $message="I'M LOVIN IT";
         $percent=$arr_check[0]['im lovin it'] * 0.4;
-        $image="gif/loving.gif";*/
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151476/loving_chefp0.gif";
 }
-if($arr_check[0]['i need a chai break']>$arr_check[0]['this is informative'] && $arr_check[0]['i need a chai break']>$arr_check[0]['need to know more...'] && $arr_check[0]['i need a chai break']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['i need a chai break']>$arr_check[0]['please slow down'] && $arr_check[0]['i need a chai break']>$arr_check[0]['this is interesting'] && $arr_check[0]['i need a chai break']>$arr_check[0]['im saturated'] && $arr_check[0]['i need a chai break']>$arr_check[0]['im lovin it'] && $arr_check[0]['i need a chai break']>$arr_check[0]['this is boring'] && $arr_check[0]['i need a chai break']>$arr_check[0]['lost the track'] && $arr_check[0]['i need a chai break']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['i need a chai break']>$arr_check[0]['why am i here???']){
+if($arr_check[0]['i need a chai break']>$arr_check[0]['this is informative'] && $arr_check[0]['i need a chai break']>$arr_check[0]['need to know more...'] && $arr_check[0]['i need a chai break']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['i need a chai break']>$arr_check[0]['please slow down'] && $arr_check[0]['i need a chai break']>$arr_check[0]['this is interesting'] && $arr_check[0]['i need a chai break']>$arr_check[0]['im saturated'] && $arr_check[0]['i need a chai break']>$arr_check[0]['im lovin it'] && $arr_check[0]['i need a chai break']>$arr_check[0]['this is boring'] && $arr_check[0]['i need a chai break']>$arr_check[0]['lost the track'] && $arr_check[0]['i need a chai break']>$arr_check[0]['best thing in the world'] && $arr_check[0]['i need a chai break']>$arr_check[0]['why am i here???']){
         $message="I NEED A CHAI BREAK";
         $percent=$arr_check[0]['i need a chai break'] * 0.4;
-        $image="gif/chai.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151472/chai_ivesvt.gif";
 }
-if($arr_check[0]['lost the track']>$arr_check[0]['need to know more...'] && $arr_check[0]['lost the track']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['lost the track']>$arr_check[0]['please slow down'] && $arr_check[0]['lost the track']>$arr_check[0]['this is interesting'] && $arr_check[0]['lost the track']>$arr_check[0]['im saturated'] && $arr_check[0]['lost the track']>$arr_check[0]['im lovin it'] && $arr_check[0]['lost the track']>$arr_check[0]['i need a chai break'] && $arr_check[0]['lost the track']>$arr_check[0]['this is boring'] && $arr_check[0]['lost the track']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['lost the track']>$arr_check[0]['why am i here???'] && $arr_check[0]['lost the track']>$arr_check[0]['this is informative']){
+if($arr_check[0]['lost the track']>$arr_check[0]['need to know more...'] && $arr_check[0]['lost the track']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['lost the track']>$arr_check[0]['please slow down'] && $arr_check[0]['lost the track']>$arr_check[0]['this is interesting'] && $arr_check[0]['lost the track']>$arr_check[0]['im saturated'] && $arr_check[0]['lost the track']>$arr_check[0]['im lovin it'] && $arr_check[0]['lost the track']>$arr_check[0]['i need a chai break'] && $arr_check[0]['lost the track']>$arr_check[0]['this is boring'] && $arr_check[0]['lost the track']>$arr_check[0]['best thing in the world'] && $arr_check[0]['lost the track']>$arr_check[0]['why am i here???'] && $arr_check[0]['lost the track']>$arr_check[0]['this is informative']){
         $message="LOST THE TRACK";
         $percent=$arr_check[0]['lost the track'] * 0.4;
-        $image="gif/lost.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151476/lost_m4iezy.gif";
 }
-if($arr_check[0]['this is informative']>$arr_check[0]['this is boring'] && $arr_check[0]['this is informative']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is informative']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is informative']>$arr_check[0]['please slow down'] && $arr_check[0]['this is informative']>$arr_check[0]['this is interesting'] && $arr_check[0]['this is informative']>$arr_check[0]['im saturated'] && $arr_check[0]['this is informative']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is informative']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is informative']>$arr_check[0]['lost the track'] && $arr_check[0]['this is informative']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['this is informative']>$arr_check[0]['why am i here???']){
+if($arr_check[0]['this is informative']>$arr_check[0]['this is boring'] && $arr_check[0]['this is informative']>$arr_check[0]['need to know more...'] && $arr_check[0]['this is informative']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['this is informative']>$arr_check[0]['please slow down'] && $arr_check[0]['this is informative']>$arr_check[0]['this is interesting'] && $arr_check[0]['this is informative']>$arr_check[0]['im saturated'] && $arr_check[0]['this is informative']>$arr_check[0]['im lovin it'] && $arr_check[0]['this is informative']>$arr_check[0]['i need a chai break'] && $arr_check[0]['this is informative']>$arr_check[0]['lost the track'] && $arr_check[0]['this is informative']>$arr_check[0]['best thing in the world'] && $arr_check[0]['this is informative']>$arr_check[0]['why am i here???']){
         $message="THIS IS INFORMATIVE";
         $percent=$arr_check[0]['this is informative'] * 0.4;
-        $image="gif/informative.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151471/informative_hzqvo7.gif";
 }
-if($arr_check[0]['best thing in the WORLD']>$arr_check[0]['this is informative'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['need to know more...'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['please slow down'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['this is interesting'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['im saturated'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['im lovin it'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['i need a chai break'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['lost the track'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['this is boring'] && $arr_check[0]['best thing in the WORLD']>$arr_check[0]['why am i here???']){
+if($arr_check[0]['best thing in the world']>$arr_check[0]['this is informative'] && $arr_check[0]['best thing in the world']>$arr_check[0]['need to know more...'] && $arr_check[0]['best thing in the world']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['best thing in the world']>$arr_check[0]['please slow down'] && $arr_check[0]['best thing in the world']>$arr_check[0]['this is interesting'] && $arr_check[0]['best thing in the world']>$arr_check[0]['im saturated'] && $arr_check[0]['best thing in the world']>$arr_check[0]['im lovin it'] && $arr_check[0]['best thing in the world']>$arr_check[0]['i need a chai break'] && $arr_check[0]['best thing in the world']>$arr_check[0]['lost the track'] && $arr_check[0]['best thing in the world']>$arr_check[0]['this is boring'] && $arr_check[0]['best thing in the world']>$arr_check[0]['why am i here???']){
         $message="BEST THING IN THE WORLD";
-        $percent=$arr_check[0]['best thing in the WORLD'] * 0.4;
-        $image="gif/best.gif";
+        $percent=$arr_check[0]['best thing in the world'] * 0.4;
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151473/best_uair0k.gif";
 }
-if($arr_check[0]['why am i here???']>$arr_check[0]['this is informative'] && $arr_check[0]['why am i here???']>$arr_check[0]['need to know more...'] && $arr_check[0]['why am i here???']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['why am i here???']>$arr_check[0]['please slow down'] && $arr_check[0]['why am i here???']>$arr_check[0]['this is interesting'] && $arr_check[0]['why am i here???']>$arr_check[0]['im saturated'] && $arr_check[0]['why am i here???']>$arr_check[0]['im lovin it'] && $arr_check[0]['why am i here???']>$arr_check[0]['i need a chai break'] && $arr_check[0]['why am i here???']>$arr_check[0]['lost the track'] && $arr_check[0]['why am i here???']>$arr_check[0]['best thing in the WORLD'] && $arr_check[0]['why am i here???']>$arr_check[0]['this is boring']){
+if($arr_check[0]['why am i here???']>$arr_check[0]['this is informative'] && $arr_check[0]['why am i here???']>$arr_check[0]['need to know more...'] && $arr_check[0]['why am i here???']>$arr_check[0]['i feel sleepy'] && $arr_check[0]['why am i here???']>$arr_check[0]['please slow down'] && $arr_check[0]['why am i here???']>$arr_check[0]['this is interesting'] && $arr_check[0]['why am i here???']>$arr_check[0]['im saturated'] && $arr_check[0]['why am i here???']>$arr_check[0]['im lovin it'] && $arr_check[0]['why am i here???']>$arr_check[0]['i need a chai break'] && $arr_check[0]['why am i here???']>$arr_check[0]['lost the track'] && $arr_check[0]['why am i here???']>$arr_check[0]['best thing in the world'] && $arr_check[0]['why am i here???']>$arr_check[0]['this is boring']){
         $message="WHY AM I HERE";
         $percent=$arr_check[0]['why am i here???'] * 0.4;
-        $image="gif/why.gif";
+        $sign="%";
+        $image="http://res.cloudinary.com/hdfr7rvfk/image/upload/v1459151475/why_jj5irm.gif";
 }
+
 ?>
 
 
@@ -240,8 +255,8 @@ if($arr_check[0]['why am i here???']>$arr_check[0]['this is informative'] && $ar
 
 
 <h4 id="message"><?php echo $message;?></h4>
-<h5 id="percent"><?php echo $percent;echo "%"?></h5>
-<img style="margin-top:-6%" src="<?php echo $image;?>" width="20%" height="20%">
+<h5 id="percent"><?php echo $percent;echo $sign;?></h5>
+<img style="margin-top:-6%" src="<?php echo $image;?>">
 
 
     

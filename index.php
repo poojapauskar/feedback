@@ -30,7 +30,7 @@ function show_wait_msg ()
 
 <?php 
 
-if (!isset($_COOKIE['FormSubmitted']))
+/*if (!isset($_COOKIE['FormSubmitted']))
 {
     setcookie('FormSubmitted', '0');
 }
@@ -57,7 +57,7 @@ if ($_COOKIE['FormSubmitted'] == 4)
 if ($_COOKIE['FormSubmitted'] == 5)
 {
     die('Thank you for your feedback!');
-} 
+} */
 
 if($_POST['feedback'] != ''){
 
