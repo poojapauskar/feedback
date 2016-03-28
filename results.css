@@ -1,0 +1,144 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+@font-face {
+  font-family: Lato Bold;
+  src: url(Fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto Medium;
+  src: url(Fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: Roboto Regular;
+  src: url(Fonts/Roboto-Regular.ttf);
+}
+
+body {
+  background: white;
+}
+
+.zoom{
+  font-size:70px;
+}
+
+
+h2 {
+  margin: 0 0 20px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #999;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+h4 {
+  margin-top:10%;
+  font-family: Roboto Regular;
+  font-weight: normal;
+  color: #66CC33;
+}
+h5 {
+  font-family: Roboto Regular;
+  margin-top: -1%;
+  font-size: 30px;
+  font-weight: normal;
+  color: #66CC33;
+}
+h6 {
+  
+}
+
+.container {
+  width: 60%;
+  margin: 20px;
+  margin-top: -9%;
+  background: transparent;
+  padding: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+.horizontal .progress-bar {
+  float: left;
+  height: 45px;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 1%;
+
+  font-family: Roboto Regular;
+  font-size: 19px;
+  text-align: right;
+  font-weight: normal;
+  color: #3399FF;
+}
+
+.horizontal .progress-track {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background: #F0F0F0 ;
+
+}
+
+.horizontal .progress-fill {
+  position: relative;
+  /*background: #66CC33;*/
+  height: 30px;
+  width: 0%;
+  color: transparent;
+  text-align: center;
+  font-family: Roboto Medium;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#boring{
+  background: #F15F24;
+}
+#know{
+  background: #3EC0CB;
+}
+#sleepy{
+  background: #FECB0B;
+}
+#slow{
+  background: #3EC0CB;
+}
+#interest{
+  background: #FECB0B;
+}
+#saturate{
+  background: #137091;
+}
+#lovin{
+  background: #FF5656;
+}
+#chai{
+  background: #FECB0B;
+}
+#track{
+  background: #137091;
+}
+#info{
+  background: #3EC0CB;
+}
+#world{
+  background: #FF5656;
+}
+#why{
+  background: #FECB0B;
+}
+
+
+.rounded .progress-track,
+.rounded .progress-fill {
+  border-radius: 3px;
+  /*box-shadow: inset 0 0 5px rgba(0,0,0,.2);*/
+}
+
+
+
