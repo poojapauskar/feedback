@@ -39,6 +39,8 @@ $arr_check = json_decode($output_check,true);
 ?>
 
 
+
+
     <!-- Horizontal, rounded -->
 
 <div class="container horizontal rounded">
@@ -163,6 +165,9 @@ $arr_check = json_decode($output_check,true);
   </div>
 </div>
 
+
+
+
 <!-- Horizontal, flat -->
 
 
@@ -258,6 +263,8 @@ if($arr_check[0]['why am i here???']>$arr_check[0]['this is informative'] && $ar
 <h5 id="percent"><?php echo $percent;echo $sign;?></h5>
 <img style="margin-top:-6%" src="<?php echo $image;?>">
 
+
+<a style="margin-top:80%;margin-left:80%" href="reset.php">Reset</a>
 
     
   </body>

@@ -30,34 +30,36 @@ function show_wait_msg ()
 
 <?php 
 
-/*if (!isset($_COOKIE['FormSubmitted']))
+if (!isset($_COOKIE['FormSubmitted']))
 {
     setcookie('FormSubmitted', '0');
 }
 if ($_COOKIE['FormSubmitted'] == 0)
 {
     setcookie('FormSubmitted', '1');
+    $warning="max 4 clicks";
 }
 if ($_COOKIE['FormSubmitted'] == 1)
 {
     setcookie('FormSubmitted', '2');
+    $warning="3 clicks remaining";
 } 
 if ($_COOKIE['FormSubmitted'] == 2)
 {
     setcookie('FormSubmitted', '3');
+    $warning="2 clicks remaining";
+
 } 
 if ($_COOKIE['FormSubmitted'] == 3)
 {
     setcookie('FormSubmitted', '4');
+    $warning="1 clicks remaining";
 }
 if ($_COOKIE['FormSubmitted'] == 4)
 {
-    setcookie('FormSubmitted', '5');
-}  
-if ($_COOKIE['FormSubmitted'] == 5)
-{
     die('Thank you for your feedback!');
-}*/ 
+}  
+
 
 if($_POST['feedback'] != ''){
 
@@ -92,7 +94,9 @@ if($_POST['feedback'] != ''){
 <!-- <h4>Feedback Form</h4> -->
 
 
-<div id="loadingPleaseWait"><h6>Loading, please wait...</h6></div>
+<!-- <div id="loadingPleaseWait"><h6>Loading, please wait...</h6></div> -->
+<h6><?php echo $warning; ?></h6>
+
       <form action="" style="margin-top:2%" method="post" id="myform" name="form1">
          <input type="hidden" value="1" name="feedback"></input>
          <!-- <button onclick="show_wait_msg()" type="submit"><img src="monkey.gif"></img>this is boring</button> -->
